@@ -19,12 +19,6 @@ elif operator == '/':
 elif operator == '%':
     result = num1 % num2 
     print(f"{num1} % {num2} = {result}")
-elif operator == "**":
-    result = num1 ** num2 
-    print(f"{num1} ** {num2} = {result}")
-elif operator == "//":
-    result = num1 // num2 
-    print(f"{num1} // {num2} = {result}")
 else :
     print("Something went wrong:" \
-    "operator should be only '+','-','*','/','%','**','//'")
+    "operator should be only '+','-','*','/','%")
