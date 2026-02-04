@@ -8,6 +8,7 @@ def compare(a, b):
     elif a == b:
          return f"{a} is equal to {b}"
     else:
-        return f"{a} is equal to {b}"
+        return f"{a} is not equal to {b}"
 result = compare(a, b)
 print(result)
+
