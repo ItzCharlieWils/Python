@@ -1,0 +1,10 @@
+userInput = input("Enter a word or short sentence: ")
+print(userInput.upper())
+print(userInput.lower())
+print(len(userInput))
+print(userInput[0:3])
+print(userInput.strip())
+print(userInput[::-1])
+print(userInput.replace("a", "@"))
+
+print(f"Final Summery: \n You Entered {userInput}")
