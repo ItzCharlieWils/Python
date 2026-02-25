@@ -1,0 +1,35 @@
+#Grade Analyzer
+count = int(input("How many grades do you want to put?: "))
+grades = []
+
+for i in range(count):
+    grade = float(input(f"Enter grade {i+1}: "))
+    grades.append(grade)
+
+total = sum(grades)
+
+def calculate_average(total, count):
+    if count == 0:
+        return 0
+    return total / count
+
+average = calculate_average(total, count)
+
+print(f"Total: {total}")
+print(f"Average: {calculate_average(total, count)}")
+
+if average >= 90:
+    print("score: Excellent")
+elif average >= 70 and average < 90:
+    print("score: average")
+else:
+    print("score:  fail")
+
+highest = max(grades)
+lowest = min(grades)
+print(f"Highest grade: {highest}")
+print(f"Lowest grade: {lowest}")
+
+comparison = sum(1 for grade in grades if grade >= 60)
+print(f"Number of grades greater than or equal to 60: {comparison}")
+
